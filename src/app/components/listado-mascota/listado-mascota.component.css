@@ -1,0 +1,15 @@
+.title {
+    background-color: #666;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    margin: 0 15vw;
+}
+
+table {
+    width: 100%;
+}
+  
