@@ -2,3 +2,19 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.title {
+    background-color: #666;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    margin: 0 15vw;
+}
+
+.card {
+    margin-top: 1.5vw;
+    text-align: center;
+}

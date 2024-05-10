@@ -1,1 +1,24 @@
-<p>ver-mascota works!</p>
+<div class="title">
+    <h1>Ver Mascota</h1>
+</div>
+<!-- <div *ngIf="mascota !== null" class="container"> -->
+<!--! Otra forma (Usando pipe async)-->
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="mascota$ | async as mascota" class="container">
+    <mat-card class="card">
+        {{mascota | json}}
+        <mat-card-header style="justify-content: center;">
+            <mat-card-title>{{mascota.nombre}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-subtitle>Breed</mat-card-subtitle>
+        <mat-card-content>
+            <p><strong>Raza: </strong>{{mascota.raza}}</p>
+            <p><strong>Color: </strong>{{mascota.color}}</p>
+            <p><strong>Peso: </strong>{{mascota.peso}} kg</p>
+            <p><strong>Edad: </strong>{{mascota.edad}} años</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listMascotas" mat-raised-button>Volver</button>
+          </mat-card-actions>
+    </mat-card>
+</div>
